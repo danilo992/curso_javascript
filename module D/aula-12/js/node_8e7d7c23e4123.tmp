@@ -1,0 +1,4 @@
+const idade = 19;
+    if (idade < 16) {
+        co
+    }
