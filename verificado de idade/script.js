@@ -21,16 +21,20 @@ function verificar() {
                 document.body.style.background = '#af02df'
             } else if (idade > 55 && idade <= 125) {
                 document.body.style.background = '#efa999'
-            } else if (idade <= 126) {
-                console.error('verifique');
-                
             }
-                
-            } else if (fsex[1].checkd) {
-                gênero = "Mulher"
-            }
-
-            res.style.textAlign = 'center';
-            res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`;
+        }  else if (fsex[1].checkd) {
+            gênero = "Mulher"
+            if (idade >= 0 && idade < 10) {
+                document.body.style.background = '#af2';
+            } else if (idade > 10 && idade <= 29) {
+                document.body.style.background = '#dca000';
+            } else if (idade > 29 && idade <=55) {
+                document.body.style.background = '#cdf222';
+            } else if (idade > 55 && idade <= 125) {
+                document.body.style.background = '#f2f';
+            }   
         }
+        res.style.textAlign = 'center';
+        res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`;
     }
+}
