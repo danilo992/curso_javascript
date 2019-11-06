@@ -22,8 +22,8 @@ function verificar() {
             } else if (idade > 55 && idade <= 125) {
                 document.body.style.background = '#efa999'
             }
-        }  else if (fsex[1].checkd) {
-            gênero = "Mulher"
+        }  else if (fsex[1].checked) {
+            gênero = 'Mulher';
             if (idade >= 0 && idade < 10) {
                 document.body.style.background = '#af2';
             } else if (idade > 10 && idade <= 29) {
@@ -36,5 +36,6 @@ function verificar() {
         }
         res.style.textAlign = 'center';
         res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`;
+        res.appendChild(img)
     }
 }

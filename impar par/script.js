@@ -1,19 +1,36 @@
-/*function verificarImpar() {
+function verificar() {
     const txtv = document.querySelector('input#numero');
     const resultado = document.querySelector('div#res');
     const valor = Number(txtv.value);
     const par = valor % 2;
-
     if (par == 0) {
-        res.innerHTML = `<p>Esse número é <strong>par</strong></p>`
+        resultado.innerHTML = `<p>esse número é <strong>par</strong></p>`
+    } else if (par !== 0 ){
+        resultado.innerHTML = `<p>Esse número é <span>impar</span>`
+    } 
+} 
+
+function verificarSeMenorMaior() {
+    let conferir = document.getElementById('valor');
+    let resultado = document.getElementById('result');
+    let numero = Number(conferir.value);
+    if (numero > 10 && numero < 100) {
+        resultado.innerHTML = `<strong>${numero}</strong> esse número é maior que <strong>10</strong> e menor que <strong>100</strong>`
     } else {
-        res.innerHTML = `<p>Esse número é <strong>impar</strong>`
+        resultado.innerHTML = `<span>${numero}</span> esse número não confere`
     }
+}
 
-    const divisivel = txtv < 10 && txtv >100;
-    const ultimo = divisivel[divisivel.length - 1];
-    const divisivelNove = 
+function nove() {
+    let busca = document.getElementById('divisivel');
+    let resultado = document.getElementById('result');
+    let converter = Number(busca.value);
+    let dividir = converter % 9;
+    if (dividir == 0) {
+        
+    }
+}
 
-*/
 
-//faca um jogo onde um jogador digita um numero e o outro jogador deve tentar advinhar 
+
+

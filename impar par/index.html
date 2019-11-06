@@ -5,22 +5,55 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+        <link rel="stylesheet" type="text/css">
+        <style>
+            strong {
+                color: rgb(75, 204, 16);
+                font-size: 30px;
+            }
+            span {
+                color: #c12;
+                font-size: 30px;
+            }
+            body {
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto' Arial, Helvetica, sans-serif;
+                font-size: 24px;
+                background: #9fe;
+            }
+        </style>
         <title>sistema</title>
     </head>
 
     <body>
+        <!--sistema de para verificar se impar ou par-->
         <h1>
             Sistema
         </h1>
-        <form>
-            Impar ou par, maior que 10 e menor que 100 e se for par dividido por 10 ou se for impar dividido por 9: <input type="number" name="txtvel" id="numero">
-            <input type="button" value="verificar" id="numero" onclick="verificarImpar()">
-        </form>
-        <div id="res">
-
-        </div>
+        <p>
+            Verificar se é impar ou par
+            <input type="number" id="numero">
+            <input type="button" value="verificar" id="numero" onclick="verificar()">
+        </p>
+        <div id="res"></div>
+        <!--fim do sistema-->
        
+        <!--verificar se é maior que 10 e menor que 100-->
+        <p>
+            verificar se é maior que 10 e menor que 100
+            <input type="number" id="valor">
+            <input type="button" value="menor ou maior" id="valor" onclick="verificarSeMenorMaior()">
+        </p>
+        <div id="result"></div>
+
+        <!--Verrificar se é divisivel por 9 ou por 10-->
+            <p>
+                <input type="number" id="divisivel">
+                <input type="button" value="Divisivel" id="divisivel" onclick="nove()">
+            </p>        
+            <div id="result"></div>
         <script src="script.js"></script>
 
     </body>
