@@ -21,39 +21,64 @@
                 padding: 0;
                 font-family: 'Roboto' Arial, Helvetica, sans-serif;
                 font-size: 24px;
-                background: #9fe;
+                background: rgb(18, 255, 211);
+            }
+            h1{
+                color: #FFF;
+                background: #000;
+            }
+            section {
+                border: 1px solid #000;
+                border-radius: 10px;
+                width: 70%;
+                margin: 0 auto;
+                padding: 10px;
+                margin-top: 20px;
+                background: #696969;
+            }
+            p {
+                color: #FFF;
             }
         </style>
-        <title>sistema</title>
+        <title>sistema js</title>
     </head>
 
     <body>
         <!--sistema de para verificar se impar ou par-->
         <h1>
-            Sistema
+            Sistema em javascript
         </h1>
-        <p>
-            Verificar se é impar ou par
-            <input type="number" id="numero">
-            <input type="button" value="verificar" id="numero" onclick="verificar()">
-        </p>
-        <div id="res"></div>
+        <section>
+                <p>
+                        Verificar se é impar ou par
+                        <input type="number" id="numero">
+                        <input type="button" value="verificar" id="numero" onclick="verificar()">
+                    </p>
+                    <div id="res"></div>
+        </section>
+       
         <!--fim do sistema-->
        
         <!--verificar se é maior que 10 e menor que 100-->
-        <p>
-            verificar se é maior que 10 e menor que 100
-            <input type="number" id="valor">
-            <input type="button" value="menor ou maior" id="valor" onclick="verificarSeMenorMaior()">
-        </p>
-        <div id="result"></div>
-
+        <section>
+                <p>
+                        verificar se é maior que 10 e menor que 100
+                        <input type="number" id="valor">
+                        <input type="button" value="menor ou maior" id="valor" onclick="verificarSeMenorMaior()">
+                    </p>
+                    <div id="result"></div>
+        </section>
+      
         <!--Verrificar se é divisivel por 9 ou por 10-->
-            <p>
-                <input type="number" id="divisivel">
-                <input type="button" value="Divisivel" id="divisivel" onclick="nove()">
-            </p>        
-            <div id="result"></div>
+        <section>
+                <p>
+                        verificar se é divisivel por nove
+                        <input type="number" id="divisivel">
+                        <input type="button" value="Divisivel" id="divisivel" onclick="nove()">
+                    </p>        
+                    <div id="resul"></div>
+        </section>
+          
         <script src="script.js"></script>
 
     </body>

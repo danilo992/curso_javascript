@@ -23,11 +23,13 @@ function verificarSeMenorMaior() {
 
 function nove() {
     let busca = document.getElementById('divisivel');
-    let resultado = document.getElementById('result');
+    let resultado = document.getElementById('resul');
     let converter = Number(busca.value);
     let dividir = converter % 9;
     if (dividir == 0) {
-        
+        resultado.innerHTML = `Sim, <strong>${converter}</strong> é divisivel por 9!`;
+    } else {
+        resultado.innerHTML = `Não,<span>${converter}</span> esse número não é divisivel por 9!`
     }
 }
 
