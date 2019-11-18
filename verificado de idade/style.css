@@ -18,9 +18,23 @@ header {
 section {
     border: 1px solid #000;
     width: 50vw;
-    height: 40vh;
+    height: 80vh;
     margin:0 auto;
     background-color: #FFF;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+
+img {
+    padding-top: 20px;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+#res {
+    display: flex;
+    flex-direction: column;
+   
 }
